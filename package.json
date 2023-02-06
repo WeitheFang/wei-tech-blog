@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "dev": "npm run tailwind:css && nodemon server.js",
+    "seed": "node seeds/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier ** --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "tailwind:css": "postcss dev/tailwind.css -o public/styles/style.css"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "mysql2": "^3.1.0",
+    "path": "^0.12.7",
+    "save": "^2.9.0",
+    "sequelize": "^6.28.0"
+  }
+}
