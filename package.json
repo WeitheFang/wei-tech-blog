@@ -21,12 +21,13 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.1.0",
     "path": "^0.12.7",
-    "save": "^2.9.0",
-    "sequelize": "^6.28.0"
+    "sequelize": "^6.28.0",
+    "postcss-cli": "^10.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.5",
+    "nodemon": "^2.0.20"
   }
 }
